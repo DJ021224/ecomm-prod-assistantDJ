@@ -8,6 +8,8 @@ from dotenv import load_dotenv
 import sys
 from pathlib import Path
 
+print(load_config())
+
 # Add the project root to the Python path for direct script execution
 project_root = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(project_root))
@@ -21,7 +23,7 @@ class Retriever:
         self._load_env_variables()
         self.vstore = None
         self.retriever = None
-    
+        
     def _load_env_variables(self):
         """_summary_
         """
