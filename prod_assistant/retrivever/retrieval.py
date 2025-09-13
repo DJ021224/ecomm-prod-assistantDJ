@@ -9,6 +9,8 @@ import sys
 from pathlib import Path
 
 print(load_config())
+# config=load_config()
+# config["astra_db"]["collection_name"]
 
 # Add the project root to the Python path for direct script execution
 project_root = Path(__file__).resolve().parents[2]
